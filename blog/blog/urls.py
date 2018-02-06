@@ -17,6 +17,8 @@ from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include, url
 from article import views
+import os
+
 
 urlpatterns = [
     # ex: /admin/
@@ -27,4 +29,7 @@ urlpatterns = [
     path('article/', include('article.urls')),
     # ex: /search/
     path('search/', views.search, name='search'),
+    # ex: /about_me/
+    path('about_me/', views.about_me, name='about_me'),
+
 ]

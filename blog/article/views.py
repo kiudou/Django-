@@ -54,3 +54,7 @@ def search(request):
                 return render(request, 'archives.html', {'post_list': post_list, 'error': False})
     else:
         return redirect('/')
+
+
+def about_me(request):
+    return render(request, 'about_me.html')
